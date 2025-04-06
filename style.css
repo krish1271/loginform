@@ -1,30 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     align-items: center;
-    background: linear-gradient(140deg, rgba(255, 0, 0, 0.575), rgba(132, 0, 255, 0.532));
+    background: linear-gradient(140deg, #b46b75, #a65a7a, #8e4e82, #6c478a, #34448f);
 }
 
 .form {
-    background-color: rgba(255, 255, 255, 0.774);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.473);
+    backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 10px;
+    padding: 40px 40px;
     text-align: center;
     gap: 20px;
-    width: 400px;
+    width: fit-content;
     border-radius: 10px;
-    box-shadow: 2px 10px 5px rgb(27, 27, 27);
+    box-shadow: 5px 5px 10px rgb(27, 27, 27);
 }
 
 input{
     background-color: rgba(0, 0, 0, 0.095);
     border: none;
     outline: none;
-    width: 200px;
+    width: 100%;
     padding: 10px 10px;
     border-radius: 10px;
     margin: 10px 0px;
@@ -67,4 +74,9 @@ button{
     border: none;
     outline: none;
     background-color: rgb(75, 103, 243);
+}
+
+
+h3{
+    color: green;
 }

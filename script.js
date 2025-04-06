@@ -5,7 +5,7 @@ const form=document.getElementById('form')
 const nameError=document.getElementById('name_error')
 const emailError=document.getElementById('email_error')
 const passError=document.getElementById('pass_error')
-
+const submitSucc=document.getElementById('Submit_success')
 form.addEventListener('submit', (e)=>{
  let success=true;
         if(Name.value===""){
@@ -37,7 +37,7 @@ form.addEventListener('submit', (e)=>{
 
     if(password.value==""){
         e.preventDefault('submit')
-        passError.innerHTML="enter any password"
+        passError.innerHTML="enter password"
         success=false;
 
     }   
@@ -58,7 +58,6 @@ form.addEventListener('submit', (e)=>{
 
     
     if(success){
-        alert("form submitted successfully")
         form.reset()
     }
     })
